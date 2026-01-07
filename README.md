@@ -5,8 +5,10 @@ My first django test project
 1. Clone this repository by running `git clone https://github.com/khianvictorycalderon/django-hello-world`
 2. Create an `.env` file that contains:
     ```env
-    DJANGO_SECRET_KEY="your-key-here"
+    DJANGO_ENV=development
+    DJANGO_SECRET_KEY=your-key-here
     DEBUG=True
+    ALLOWED_HOSTS=localhost 127.0.0.1 # Add more urls if needed
     ```
 3. Run the following command for database migration:
     - `python manage.py makemigrations` or `py manage.py makemigrations`
